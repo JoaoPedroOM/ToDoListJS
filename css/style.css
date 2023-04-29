@@ -6,9 +6,8 @@
 }
 
 body{
-  background: url('../img/background.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(180deg, #bce5ff 0, #9db9f2 50%, #7e8fb3 100%);
+  min-height: 100vh;
 }
 .container{
   background-color: #d1d1d1;
@@ -84,37 +83,21 @@ img{
   cursor: pointer;
 }
 
-@media(max-width:850px){
+ @media(max-width:800px){
+  body{
+    background-image: linear-gradient(180deg, #bce5ff 0, #9db9f2 50%, #7e8fb3 100%);
+    min-height: 100vh;
+  }
   .container{
-    width: 450px;
-  }
-  .input-task{
-    width: 310px;
-  }
-  .btn-add-task{
-    height: 40px;
-    font-size: 13px;
-    padding: 0 15px;
-  }
-}
-
-@media(max-width:800px){
-  /* body{
-    background: url('../img/backgroundcell.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100vw;
-  } */
-  .container{
-    width: 300px;
+    width: 320px;
   }
   .input-task{
     width: 190px;
   }
   .btn-add-task{
     height: 40px;
-    font-size: 10px;
-    padding: 0 10px;
+    font-size: 13px;
+    padding: 0 15px;
   }
-}
+} 
 
